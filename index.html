@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width ; initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Log In</title>
+	<style type="text/css">
+		body{
+			background-image: url(backgorugn.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 1665px 3213px;
+		}
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#login-container{
+			background-color: pink;
+			margin: 5px;
+			margin-top: 10px;
+			width: 400px;
+			height: 400px;
+		}
+		#pfp{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+		}
+		.logo-image{
+    		width: 80px;
+    		height: 80px;
+	    	border-radius: 50%;
+		}
+		#header{
+			width: 975px;
+			height: 180px;
+			align-content: center;
+		}
+		.navbar{
+			background-color: #3ab548;
+			color:#3ab548;
+		}
+		label{
+            color: white;
+        }
+	</style>
+</head>
+<body>
+
+	<tr id="container">
+				<nav class="navbar navbar-expand-sm">
+		<!-- Brand/Logo -->
+			<a class="navbar-brand" href="#Home">
+      <div class="logo-image">
+            <img src="torologo.png" class="img-fluid">
+      </div>
+</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="page1.html" style="color: white">★ Q1 project</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page2.html" style="color: white">★ Q2 project</a>
+				</li>
+			</ul>
+<form>
+    <label for="Search">search:</label>
+    <input type="text" name="Search" id="Search">
+</form>
+</div>
+</nav>
+</tr>
+
+<center>
+	<div id="login-container">
+		<div class="col-md-10">
+			<img id="pfp" src="itme.jpg"><br><br>
+
+		<form action="mainpage.html" class="form-group">
+			<label id="email-label" style="color: black"></label><br>
+			<input type="text" class="form-control bg-light" name="email" id="email">
+			<br>
+			<label id="pw-label" style="color: black"></label><br>
+			<input type="text" class="form-control bg-light" name="password" id="password">
+			<br>
+
+			<a href="mainpage.html"><button class="btn btn-success">Login</button></a>
+			<a href="#"><button type="cancel" class="btn btn-light">Cancel</button></a>
+		</form>
+		</div>
+	</div>
+</center>
+	<script type="text/javascript">
+		document.getElementById("email-label").innerHTML = "Email:";
+		document.getElementById("pw-label").innerHTML = "Password:";
+	</script>
+</body>
+</html>
